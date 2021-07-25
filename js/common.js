@@ -79,6 +79,6 @@ function heartBeat() {
 
 ;(function() {
   if (!location.href.includes('login')) {
-    // heartBeat();
+    heartBeat();
   }
 })();
