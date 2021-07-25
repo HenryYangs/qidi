@@ -6,7 +6,10 @@ const config = {
     login: 'file:///Users/henry/Desktop/code/pt%20code/grades/login.html',
     management: 'file:///Users/henry/Desktop/code/pt%20code/grades/management.html',
     result: 'file:///Users/henry/Desktop/code/pt%20code/grades/result.html'
-  }
+  },
+  heartBeatWhiteList: [
+    'file:///Users/henry/Desktop/code/pt%20code/grades/login.html'
+  ],
 }
 
 // 挂载loading元素
@@ -78,7 +81,7 @@ function heartBeat() {
 }
 
 ;(function() {
-  if (!location.href.includes('login')) {
+  if (!config.heartBeatWhiteList.includes(location.href)) {
     heartBeat();
   }
 })();
