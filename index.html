@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" style="font-size: 16px">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./css/bootstrap.css" rel="stylesheet">
+  <title>启迪-罗湖双创赛比分公示系统 报名/成绩查询</title>
+</head>
+<body>
+  <nav class="navbar navbar-dark bg-primary">
+    <div class="container-fluid">
+      <span class="navbar-brand mb-0 h1">报名/成绩查询</span>
+    </div>
+  </nav>
+
+  <div class="container mt-3">
+    <p class="text-center fs-1">报名/成绩查询</p>
+
+    <form id="form">
+      <div class="row">
+        <div class="col">
+          <label for="groupName" class="form-label">企业/团队名称</label>
+          <input id="groupName" type="text" class="form-control" placeholder="请输入企业/团队名称" aria-label="企业/团队名称" required data-key="groupName">
+        </div>
+        <div class="col">
+          <label for="projectName" class="form-label">项目名称</label>
+          <input id="projectName" type="text" class="form-control" placeholder="请输入项目名称" aria-label="项目名称" required data-key="projectName">
+        </div>
+      </div>
+
+      <div class="row mt-3">
+        <div class="col">
+          <label for="directorName" class="form-label">负责人名称</label>
+          <input id="directorName" type="text" class="form-control" placeholder="请输入负责人名称" aria-label="负责人名称" required data-key="directorName">
+        </div>
+        <div class="col">
+          <label for="directorMobile" class="form-label">负责人手机号</label>
+          <input id="directorMobile" type="number" class="form-control" placeholder="请输入负责人手机号" aria-label="负责人手机号" required data-key="directorMobile">
+        </div>
+      </div>
+
+      <div class="mt-5 mx-auto col-6 text-center gap-3">
+        <button type="button" class="btn btn-primary col-5" id="submit">
+          <div class="spinner-border spinner-border-sm visually-hidden" role="status" id="spinner">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+          提交
+        </button>
+        <button type="button" class="btn btn-secondary col-5" id="reset">重置</button>
+      </div>
+    </form>
+  </div>
+
+  <script src="./js/jquery.js"></script>
+  <script src="./js/common.js"></script>
+  <script src="./js/form.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+</html>

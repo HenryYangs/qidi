@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" style="font-size: 16px">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./css/bootstrap.css" rel="stylesheet">
+  <title>启迪-罗湖双创赛比分公示系统 成绩管理</title>
+</head>
+<body>
+  <nav class="navbar navbar-dark bg-primary" id="nav">
+    <div class="container-fluid">
+      <span class="navbar-brand mb-0 h1">成绩管理</span>
+    </div>
+  </nav>
+
+  <div class="container mt-3">
+    <p class="text-center fs-1">成绩管理</p>
+
+    <button type="button" class="btn btn-primary" id="import">导入</button> 
+    <input type="file" class="d-none" id="importTrigger" accept=".xlsx" />
+
+    <table class="table table-striped mt-3">
+      <thead>
+        <tr>
+          <th scope="col">序号</th>
+          <th scope="col">组别</th>
+          <th scope="col">项目名称</th>
+          <th scope="col">得分</th>
+        </tr>
+      </thead>
+
+      <tbody id="list"></tbody>
+    </table>
+  </div>
+
+  <script src="./js/jquery.js"></script>
+  <script src="./js/common.js"></script>
+  <script src="./js/management.js"></script>
+</body>
+</html>

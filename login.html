@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" style="font-size: 16px">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./css/bootstrap.css" rel="stylesheet">
+  <style>
+    @media (max-width: 575.98px) {
+      .full {
+        width: 100%;
+      }
+    }
+  </style>
+  <title>启迪-罗湖双创赛比分公示系统</title>
+</head>
+<body>
+  <nav class="navbar navbar-dark bg-primary" id="nav">
+    <div class="container-fluid">
+      <span class="navbar-brand mb-0 h1">启迪-罗湖双创赛比分公示系统</span>
+    </div>
+  </nav>
+
+  <div class="container mt-3">
+    <form id="form">
+      <div class="col-8 mx-auto full">
+        <label for="username" class="form-label">用户名</label>
+        <input id="username" type="text" class="form-control" placeholder="请输入用户名" aria-label="用户名" required data-key="username">
+      </div>
+
+      <div class="col-8 mx-auto mt-3 full">
+        <label for="password" class="form-label">密码</label>
+        <input id="password" type="password" class="form-control" placeholder="请输入密码" aria-label="密码" required data-key="password">
+      </div>
+
+      <div class="d-grid col-6 mt-5 mx-auto">
+        <button type="button" class="btn btn-primary btn-lg" id="submit">
+          <div class="spinner-border spinner-border-sm visually-hidden" role="status" id="spinner">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+          登录
+        </button> 
+      </div>
+    </form>    
+  </div>
+
+  <script src="./js/jquery.js"></script>
+  <script src="./js/common.js"></script>
+  <script src="./js/form.js"></script>
+  <script src="./js/login.js"></script>
+</body>
+</html>

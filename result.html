@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" style="font-size: 16px">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./css/bootstrap.css" rel="stylesheet">
+  <title>启迪-罗湖双创赛比分公示系统 比分/成绩公示</title>
+</head>
+<body>
+  <nav class="navbar navbar-dark bg-primary" id="nav">
+    <div class="container-fluid">
+      <span class="navbar-brand mb-0 h1">比分/成绩公示</span>
+    </div>
+  </nav>
+
+  <div class="container mt-3">
+    <p class="text-center fs-1">成绩公示</p>
+
+    <div class="row">
+      <div class="col text-center">
+        <span>序号：</span>
+        <span id="no">-</span>
+      </div>
+      <div class="col text-center">
+        <span>组别：</span>
+        <span id="groupType">-</span>
+      </div>
+    </div>
+    
+    <div class="row mt-3">
+      <div class="col text-center">
+        <span>项目名称：</span>
+        <span id="projectName">-</span>
+      </div>
+      <div class="col text-center">
+        <span>得分：</span>
+        <span id="finalScore">-</span>
+      </div>
+    </div>
+
+    <div class="d-grid col-6 mt-5 mx-auto">
+      <a class="btn btn-primary" href="" id="redirect" role="button">返回</a>
+    </div>
+  </div>
+
+  <script src="./js/jquery.js"></script>
+  <script src="./js/common.js"></script>
+  <script src="./js/result.js"></script>
+</body>
+</html>
